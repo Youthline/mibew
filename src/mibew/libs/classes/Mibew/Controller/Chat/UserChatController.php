@@ -154,6 +154,7 @@ class UserChatController extends AbstractController
             $visitor = visitor_from_request();
             $info = $request->query->get('info');
             $email = $request->query->get('email');
+            $txtcode = $request->query->get('txtcode');
 
             // Get referrer
             $referrer = $request->query->get('url', $request->headers->get('referer'));
@@ -209,7 +210,8 @@ class UserChatController extends AbstractController
                         $email,
                         $group_id,
                         $info,
-                        $referrer
+                        $referrer,
+                        $txtcode
                     )
                 );
                 $page['surveyOptions'] = $page['survey'];

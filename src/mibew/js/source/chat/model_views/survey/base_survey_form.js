@@ -42,6 +42,7 @@
                 groupDescription: '#group-description',
                 name: 'input[name="name"]',
                 email: 'input[name="email"]',
+                txtcode: 'input[name="txtcode"]',
                 message: 'textarea[name="message"]',
                 errors: '.errors',
                 ajaxLoader: '#ajax-loader'

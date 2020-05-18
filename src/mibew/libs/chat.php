@@ -204,7 +204,7 @@ function setup_leavemessage($name, $email, $group_id, $info, $referrer)
  * @param string $referrer URL of referrer page
  * @return array Array of survey data
  */
-function setup_survey($name, $email, $group_id, $info, $referrer)
+function setup_survey($name, $email, $group_id, $info, $referrer, $txtcode)
 {
     $data = prepare_chat_app_data();
 
@@ -217,6 +217,7 @@ function setup_survey($name, $email, $group_id, $info, $referrer)
         'email' => $email,
         'info' => $info,
         'referrer' => $referrer,
+        'txtcode' => $txtcode,
         'showEmail' => (bool) (Settings::get("surveyaskmail") == "1"),
         'showMessage' => (bool) (Settings::get("surveyaskmessage") == "1"),
         'canChangeName' => (bool) (Settings::get('usercanchangename') == "1"),

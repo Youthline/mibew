@@ -76,6 +76,8 @@
                     values.message = this.ui.message.val() || '';
                 }
 
+                values.txtcode = this.ui.txtcode.val() || '';
+
                 // Update model fields
                 this.model.set(values, {validate: true});
 

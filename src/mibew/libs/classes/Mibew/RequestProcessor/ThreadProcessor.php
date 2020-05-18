@@ -616,6 +616,7 @@ class ThreadProcessor extends ClientSideProcessor implements
         $info = $args['info'];
         $email = $args['email'];
         $referrer = $args['referrer'];
+        $txtcode = $args['txtcode'];
 
         // Verify group id
         $group_id = 0;
@@ -674,6 +675,11 @@ class ThreadProcessor extends ClientSideProcessor implements
                 getlocal('E-Mail: {0}', array($email), get_current_locale(), true)
             );
         }
+
+        $thread->postMessage(
+            Thread::KIND_FOR_AGENT,
+            getlocal('Txt Code: {0}', array($txtcode), get_current_locale(), true)
+        );
 
         if ($first_message) {
             $posted_id = $thread->postMessage(

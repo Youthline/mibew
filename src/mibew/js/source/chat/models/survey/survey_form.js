@@ -83,6 +83,15 @@
                         }
                     }
                 }
+
+                const regex = /^GC[0-9]+$/g;
+                if (typeof attributes.txtcode != 'undefined') {
+                    if(!attributes.txtcode.match(regex)) {
+                        return Mibew.Localization.trans(
+                            'Invalid txt code.'
+                        );
+                    }
+                }
             },
 
             /**
@@ -104,6 +113,7 @@
                                 "name": self.get('name'),
                                 "info": self.get('info'),
                                 "email": self.get('email'),
+                                "txtcode": self.get('txtcode'),
                                 "message": self.get('message'),
                                 "referrer": self.get('referrer'),
                                 // There is no initialized thread yet
