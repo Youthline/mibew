@@ -486,6 +486,14 @@ ul li {
     border-collapse: collapse;
     vertical-align: top;
 }
+
+.survey-form {
+    width: 100%;	
+}
+
+.username {
+    width: 100%
+}
 #content-wrapper #send-message {
     float: left;
     margin-top: 10px;
