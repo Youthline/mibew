@@ -487,12 +487,12 @@ ul li {
     vertical-align: top;
 }
 
-.survey-form {
+.surveyform {
     width: 100%;	
 }
 
 .username {
-    width: 100%
+    width: 100%;
 }
 #content-wrapper #send-message {
     float: left;
