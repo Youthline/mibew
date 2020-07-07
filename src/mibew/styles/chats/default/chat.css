@@ -353,7 +353,7 @@ a:hover .image-close-window {
 /* sending message area (#send) */
 #post-message {
 }
-#send-message, .submit-button {
+#send-message, .submit-button, #submit-survey {
     float: right;
     width: 190px;
     height: 33px;
